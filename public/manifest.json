@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Solana Wallet Connector",
+    "version": "1.0",
+    "description": "Connect to Solana wallets",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://*.solana.com/*",
+        "wss://*.solana.com/*",
+        "https://*.phantom.app/*",
+        "https://*.solflare.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.jpeg"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.jpeg"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+    }],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.mainnet-beta.solana.com https://api.devnet.solana.com https://api.testnet.solana.com"
+    },
+    "web_accessible_resources": [{
+        "resources": ["dist/*", "popup.html"],
+        "matches": ["<all_urls>"]
+    }],
+    "externally_connectable": {
+        "matches": ["*://*/*"]
+    }
+}

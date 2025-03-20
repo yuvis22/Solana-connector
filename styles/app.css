@@ -1,0 +1,161 @@
+.solana-app {
+  width: 400px;
+  min-height: 500px;
+  max-height: 600px;
+  background-color: #181d28;
+  color: #e2e8f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Wallet Button Styles */
+.wallet-adapter-button-trigger {
+  background-color: #4f46e5 !important;
+  padding: 0 24px !important;
+  height: 48px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 320px !important;
+  margin: 0 auto !important;
+}
+
+.wallet-adapter-button-trigger:hover {
+  background-color: #4338ca !important;
+  transform: translateY(-1px);
+}
+
+.network-selector {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 8px;
+}
+
+.network-dropdown {
+  width: 100%;
+  height: 48px;
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  color: white;
+  padding: 0 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.network-dropdown:hover {
+  border-color: #4f46e5;
+  background: #374151;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.nft-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.network-info {
+  font-size: 16px;
+  color: #e2e8f0;
+  margin: 8px 0;
+}
+
+/* Wallet Modal Styles */
+.wallet-adapter-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1000 !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: #1a1f2e !important;
+  border: 1px solid #2d3748 !important;
+  border-radius: 16px !important;
+  max-width: 400px !important;
+  width: 100% !important;
+  padding: 24px !important;
+}
+
+.wallet-adapter-modal-button-close {
+  background: transparent !important;
+  color: white !important;
+  position: absolute !important;
+  right: 16px !important;
+  top: 16px !important;
+}
+
+.wallet-adapter-modal-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.wallet-adapter-modal-list-item {
+  margin: 8px 0 !important;
+}
+
+.wallet-adapter-modal-list button {
+  width: 100% !important;
+  height: 48px !important;
+  background: #2d3748 !important;
+  border: 1px solid #4a5568 !important;
+  border-radius: 8px !important;
+  color: white !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 16px !important;
+}
+
+.wallet-adapter-modal-list button:hover {
+  background: #374151 !important;
+  border-color: #4f46e5 !important;
+} 

@@ -1,0 +1,14 @@
+/* Wallet Adapter Modal Styles */
+.wallet-adapter-modal {
+  width: 100% !important;
+  max-width: 360px !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  max-width: 360px !important;
+}
+
+.wallet-adapter-button {
+  width: 100% !important;
+  justify-content: center !important;
+} 
